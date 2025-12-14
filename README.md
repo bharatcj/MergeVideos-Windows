@@ -33,7 +33,7 @@ Note: FFprobe comes bundled with FFmpeg. You don’t install it separately.
 
 ## Install FFmpeg on Windows (not a nerd thing, it’s actually easy)
 
-FFmpeg’s official site links to **compiled builds** because FFmpeg itself is primarily distributed as source code.
+FFmpeg’s official site links to **compiled builds** because FFmpeg itself is primarily distributed as source code.  
 Pick one of these two easy routes:
 
 ### Option A: Install with winget (fastest)
@@ -41,7 +41,7 @@ Pick one of these two easy routes:
 1) Open **Windows Terminal** or **Command Prompt**  
 2) Run:
 
-fpowershell
+```powershell
 winget install -e --id Gyan.FFmpeg
 ```
 
@@ -51,13 +51,11 @@ winget install -e --id Gyan.FFmpeg
 2. Extract it to a simple folder like: `C:\ffmpeg\`
 3. Add the `bin` folder to PATH:
 
-   * Press **Win** key, search: **Environment Variables**
+   * Press the **Win** key, search: **Environment Variables**
    * Open: **Edit the system environment variables**
    * Click: **Environment Variables**
-   * Under **System variables**, select **Path** > **Edit**
-   * Click **New** and add:
-
-     * `C:\ffmpeg\bin`
+   * Under **System variables**, select **Path** -> **Edit**
+   * Click **New** and add: `C:\ffmpeg\bin`
    * Click OK, OK, OK
 4. Close and reopen Terminal
 
@@ -68,9 +66,6 @@ FFmpeg downloads page (official): https://www.ffmpeg.org/download.html
 Gyan.dev Windows builds:         https://www.gyan.dev/ffmpeg/builds/
 BtbN GitHub builds:              https://github.com/BtbN/FFmpeg-Builds/releases
 ```
-
-FFmpeg builds from gyan.dev explicitly include `ffmpeg` and `ffprobe` in the package. ([Gyan.dev][2])
-(And yes, this is normal — FFmpeg points to third-party compiled builds for Windows.) ([FFmpeg][3])
 
 ### Confirm installation
 
